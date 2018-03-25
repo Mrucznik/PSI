@@ -50,3 +50,6 @@ fabric.properties
 
 # Python cache
 __pycache__/
+
+# Idea folder
+.idea/
