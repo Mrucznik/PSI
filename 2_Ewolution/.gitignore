@@ -48,7 +48,5 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-
-## Own .gitignore
-*.html
-*.txt
+# Python cache
+__pycache__/

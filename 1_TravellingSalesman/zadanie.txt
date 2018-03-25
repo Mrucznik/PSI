@@ -1,0 +1,12 @@
+Zadanie:
+1. Brute force
+2. NN (najbli¿si s¹siedzi)
+3. Przeszukiwanie grafów
+a) w g³¹b
+b) w szerz
+
+Przygotowaæ tabelke 
+4-10 miast
+czas rozwi¹zania w megaflopach i wynik
+
+ftp://zly.kis.p.lodz.pl/pub/laboratoria/P.Urbanek/PSI_2015_DZIENNE/PSI_szukanie_lab.pdf
