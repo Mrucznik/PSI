@@ -1,7 +1,6 @@
 import random
 
-ch_size = 7
-
+ch_size = 7 
 
 def generate_population(population_size):
     return random.sample(range(1, 2**ch_size), population_size)
