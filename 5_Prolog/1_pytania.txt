@@ -1,0 +1,52 @@
+lubi(magda,marek). - false
+lubi(marek,psy). - true
+kobieta(adolf). - false
+
+Kogo lubi marek
+lubi(marek, X). - 
+	X = psy
+	X = adolf
+	
+Kto jest kobietą
+kobieta(X).
+	X = ala
+	X = zofia
+	X = magda
+
+Mężczyźni, których marek lubi
+lubi(marek, X), mezczyzna(X). 
+	X = adolf
+
+lubi(_, marek). - true (czy ktoś lubi marka)
+lubi(marek, _). - true (czy marek kogoś lubi)
+lubi(adolf, _). - false (czy adolf kogoś lubi)
+
+Czy ktoś jeszcze lubi 
+lubi(marek, _RZECZ), lubi(_OSOBA, _RZECZ), _OSOBA\==marek. - true
+
+Jakich mężczyzn lubi adolf
+lubi(adolf, OSOBA), mezczyzna(OSOBA).
+	OSOBA = jozef
+
+Czy ktoś kto lubi psy, lubi też adolfa
+lubi(_OSOBA, psy), lubi(_OSOBA, adolf). - true
+
+--po dodaniu zasad z punktu 2
+
+Co lubi marek
+lubi(marek, OSOBA).
+	OSOBA = psy
+	OSOBA = adolf
+	OSOBA = ala
+	OSOBA = zofia
+	OSOBA = magda
+	
+Co lubi ala:
+lubi(ala, OSOBA).
+	OSOBA = psy
+	OSOBA = koty
+	OSOBA = psy
+	OSOBA = adolf
+	OSOBA = ala
+	OSOBA = zofia
+	OSOBA = magda

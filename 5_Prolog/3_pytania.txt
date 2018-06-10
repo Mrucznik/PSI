@@ -1,0 +1,23 @@
+Kto bierze udział w zawodach?
+bierze_udzial_w_zawodach(X).
+	X = marek
+	X = jan
+	X = jan
+	false
+
+Czy jest ktoś, kto jest piłkarzem i pływakiem?
+pilkarz(OSOBA),plywak(OSOBA).
+	OSOBA = jan
+	
+Kto ma kondycję?
+ma_dobra_kondycje(OSOBA).
+	OSOBA = marek
+	OSOBA = jan
+
+Kim jest Marek?
+???
+
+Kto biega?
+biegacz(OSOBA).
+	OSOBA = marek
+	OSOBA = jan
