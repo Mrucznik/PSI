@@ -2,8 +2,7 @@ import random
 import time
 from bruteforce import *
 from nearestneighbour import *
-from bfs import * # przeszukiwanie wszerz
-from dfs import * # przeszukiwanie wgłąb
+from bfs import *
 
 
 towns_count = 10
@@ -20,4 +19,4 @@ print("NN win path: (time: " + str(time.time() - time_elapsed) + " ): " + str(bf
 
 time_elapsed = time.time()
 bf_result = nearest_neighbour_alltowns(towns)
-print("Weird NN win path: (time: " + str(time.time() - time_elapsed) + " ): " + str(bf_result))
+print("NN for all towns win path: (time: " + str(time.time() - time_elapsed) + " ): " + str(bf_result))
